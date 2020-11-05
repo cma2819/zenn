@@ -3,7 +3,7 @@ title: "【NodeCG】実践Replicant"
 emoji: "📹"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["javascript", "nodejs", "nodecg"]
-published: false
+published: true
 ---
 
 # 本記事の目的
