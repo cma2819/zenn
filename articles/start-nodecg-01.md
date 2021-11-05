@@ -46,7 +46,7 @@ NodeCGについてより詳しく知りたい方は、NodeCGのメンテナー�
 
 # 公式ドキュメントを読もう！
 
-まずはNodeCGについての情報源である公式ドキュメントを読むことにします。NodeCGのウェブサイトは[こちら](https://nodecg.com/)です。ブックマークしましょう。
+まずはNodeCGについての情報源である公式ドキュメントを読むことにします。NodeCGのウェブサイトは[こちら](https://www.nodecg.dev/)です。ブックマークしましょう。
 
 ![NodeCG ウェブサイトトップ](https://storage.googleapis.com/zenn-user-upload/zl1tp1sov6khqhu9p3k0n77lxroh)
 
@@ -58,7 +58,7 @@ NodeCGの機能説明や仕様が載っています。日本語の情報は現�
 
 ドキュメントのインストール手順に従って、インストールを進めます。
 
-[https://nodecg.com/docs/installing](https://nodecg.com/docs/installing)
+[https://www.nodecg.dev/docs/installing](https://www.nodecg.dev/docs/installing)
 
 インストール手順が記載されているので、順番に進めていきましょう。
 
