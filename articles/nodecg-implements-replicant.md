@@ -35,9 +35,11 @@ dashboardやgraphicsでは、更新されたReplicantの値を表示します。
 
 # サンプルbundle
 
-本記事用にReplicantを利用するサンプルbundleを作成しました。本記事内でのコード例もサンプルから引用しますので、別タブで表示する等して併せてご参照ください。
+本記事用にReplicantを利用するサンプルbundleを作成しました。本記事内でのコード例もサンプルから引用しますので、別タブで表示する等して併せてご参照ください
 
-[train-replicants](https://github.com/cma2819/train-replicants)
+※ 2022.02.02 リポジトリを移動しました
+
+[train-replicants](https://github.com/cma-samples/train-replicants)
 
 # Replicantオブジェクト
 
