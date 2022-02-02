@@ -22,6 +22,10 @@ published: true
 
 RTA イベントに限らず, オンラインイベントでの時間管理に悩んでいる方の助けとなればと思います.
 
+# リポジトリ
+
+https://github.com/cma2819/nodecg-timekeeper
+
 # Why NodeCG?
 
 今回 NodeCG バンドルとして実装したのにはいくつかの理由があります.
