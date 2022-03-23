@@ -1,5 +1,5 @@
 ---
-title: "【2020年版】1から学ぶNodeCG#2：Bundle導入編"
+title: "1から学ぶNodeCG#2：Bundle導入編"
 emoji: "📹"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["javascript", "nodejs", "nodecg"]
