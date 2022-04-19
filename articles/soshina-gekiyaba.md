@@ -1,5 +1,5 @@
 ---
-title: "【クソアプリ】粗品激ヤバジェネレーターを作りました"
+title: "【クソアプリ】粗品激ヤバYouTuberジェネレーターを作りました"
 emoji: "💸"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ['react', 'nextjs', 'typescript']
