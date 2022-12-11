@@ -10,10 +10,6 @@ published: false
 
 デザインするツールを持ち合わせていなかったり、そもそもデザインの知見もなかったので、 GitHub Pages で公開しているプロフィールページをもとに React + Material UI でデザインしてみよう、ということでやってみました。
 
-# 完成品
-
-// TODO: 完成品届いたら写真で載せる
-
 # プロフィールページ
 
 GitHub Pages でドメインを割り当てて公開しています。
@@ -66,13 +62,82 @@ Web上に公開したページをどう名刺にするかですが、アプロ�
 
 これを印刷して入稿、完成したのが前述の写真のものなのですが、掘り下げられそうなポイントだけ取り上げてみます。
 
-## 配置は Flex でレスポンシブに
+## 配置は flex でレスポンシブに
+
+Web上で見ても名刺上でも配置が崩れないことが要件なので、flex を活用します。
+
+Mui には [Grid Component](https://mui.com/material-ui/react-grid/) という直感的に flex レイアウトを実装できるコンポーネントがある他、各コンポーネントに flex に関する API が共通して定義されているため、CSS なしで flex の実装ができました。
+
+```tsx
+<Grid container direction='column' sx={{
+  height: '100vh',
+  padding: 2,
+}}>
+  <Grid item xs>
+    // 自動リサイズしてほしい要素, メインで表示したい名前など
+  </Grid>
+
+  <Grid item>
+    // 最低限のサイズにしてほしい要素, SNS情報など
+  </Grid>
+</Grid>
+```
+
+```tsx
+<Box
+  display='flex'
+  flexDirection='column'
+  justifyContent='center'
+  alignItems='center'
+  sx={{
+    height: '100vh',
+    '@media not print': {
+      display: 'none',
+    }
+  }}
+>
+  <Stack
+    alignItems='center'
+    spacing={2}
+  >
+    <QrCode />
+    <AddressBar />
+  </Stack>
+</Box>
+
+```
 
 ## 名刺には載せたくないものは `@media print` で表現
 
+関連ページへのリンクなどは、Web上はリンクとしてスタイルが効いて欲しいですが、名刺に載る上では不要なスタイルになります。
+
+こういったものは印刷時にのみ有効になる CSS `@media print` を使います。
+
+```tsx
+const CardLink = styled(Link)({
+  '@media print': {
+    color: 'inherit',
+    textDecoration: 'none',
+  }
+});
+```
+
 ## Webページへの導線デザイン
 
-ブラウザのアドレスバー風にしたのが気に入ってるってだけです。
+Webページと名刺のリンク感が出たらいいなと、Safari のアドレスバー風にしてみました。気に入ってます。
+
+![](https://storage.googleapis.com/zenn-user-upload/6cec84931d9b-20221212.png)
+
+# 完成品
+
+完成したものがこちらです。
+
+![](https://storage.googleapis.com/zenn-user-upload/f768f78e1e00-20221212.jpg)
+![](https://storage.googleapis.com/zenn-user-upload/0b6294101db4-20221212.jpg)
+
+文字ちっちゃ～～～～～～い。
+
+わかりやすい反省点はあるものの、概ねやりたかったことはできたので、あとはプロフィールページをアップデートしていくのみですね。
 
 # おわりに
 
