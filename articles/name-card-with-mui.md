@@ -3,7 +3,7 @@ title: "React + Material UI で名刺を作ってみた"
 emoji: "📇"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["react", "nextjs", "typescript"]
-published: false
+published: true
 ---
 
 最近、趣味で関わっているRTAのコミュニティでは、オフイベントで顔を合わせた際にオリジナルの名刺で自己紹介するのが流行しています。
