@@ -3,7 +3,7 @@ title: "「ちょうぜつソフトウェア設計入門」は自称中級プロ
 emoji: "👧"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["読書感想文"]
-published: false
+published: true
 ---
 
 田中ひさてるさん（@tanakahisateru）の著書「ちょうぜつソフトウェア設計入門」を今更ながら読了したので、感想を書き連ねていこうと思う。
