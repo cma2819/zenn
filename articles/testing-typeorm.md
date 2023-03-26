@@ -188,9 +188,8 @@ Laravel を参考にDBリセット用の仕組みとして、 `refreshDatabase` 
 
 ほぼ Laravel の `RefreshDatabase` と同様の方針です。
 
-```typescript:tests/refreshDatabase.ts
+```typescript:tests/refresh-database.ts
 import { DataSource, EntityManager } from 'typeorm';
-import { User } from '../entity/User';
 import { TestingDataSource } from './data-source';
 
 let connection: DataSource;
