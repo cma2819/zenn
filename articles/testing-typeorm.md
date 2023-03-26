@@ -3,7 +3,7 @@ title: "TypeORM + jest で DB アクセスを伴うテストを書いてみた"
 emoji: "🛠️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["typescript", "typeorm"]
-published: false
+published: true
 ---
 
 ## はじめに
@@ -287,7 +287,7 @@ https://github.com/cma2819/zenn/blob/master/works/typeorm-testing/src/repository
 
 ## 課題
 
-実用のためには、以下のような課題がありそうです。
+実用のためには、以下のような課題が残っています。
 
 - migration の実行がテスト毎に回ってしまうので、テスト自体に時間がかかる。全テストで1度きりにしたい
 - `refreshDatabase` するテストが並列で動いても問題ないか
