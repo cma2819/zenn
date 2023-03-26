@@ -6,4 +6,12 @@ services:
       POSTGRES_USER: "test"
       POSTGRES_DB: "test"
     ports:
-      - "25432:5432"
+      - "5432:5432"
+  db-testing:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "test"
+      POSTGRES_USER: "test"
+      POSTGRES_DB: "testing"
+    ports:
+      - "15432:5432"
