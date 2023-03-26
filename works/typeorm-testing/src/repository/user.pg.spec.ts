@@ -2,7 +2,7 @@ import { afterAll, beforeAll, describe, expect, test } from '@jest/globals';
 import { User } from '../entity/User';
 import { makeName } from '../models/name';
 import { ageUser, newUser } from '../models/user';
-import { destroyConnection, initConnection, refreshDatabase } from '../tests/refreshDatabase';
+import { destroyConnection, initConnection, refreshDatabase } from '../tests/refresh-database';
 import { PgUserRepository } from './user.pg';
 
 describe("test", () => {

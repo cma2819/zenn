@@ -1,5 +1,4 @@
 import { DataSource, EntityManager } from 'typeorm';
-import { User } from '../entity/User';
 import { TestingDataSource } from './data-source';
 
 let connection: DataSource;
