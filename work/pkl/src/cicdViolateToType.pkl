@@ -1,0 +1,3 @@
+amends "templates/acmecicd.pkl"
+
+timeout = 1

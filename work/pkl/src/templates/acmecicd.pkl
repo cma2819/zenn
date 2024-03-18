@@ -1,0 +1,22 @@
+module temp.acmecicd // モジュールに名前をつけることもできる（URIインポート時に活用されたりするらしい）
+
+class Pipeline {
+  name: String(nameRequiresBranchName)?
+
+  hidden nameRequiresBranchName = (_) ->
+      if (branchName == null)
+        throw("Pipelines that set a 'name' must also set a 'branchName'.")
+      else true
+
+  branchName: String?
+}
+
+// 誓約つきの型
+timeout: Int(this >= 3)
+
+pipelines: Listing<Pipeline>
+
+output {
+  // output.renderer を定義すると、モジュールを eval したときの出力を決められる
+  renderer = new JsonRenderer {}
+}

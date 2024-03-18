@@ -1,0 +1,3 @@
+amends "modules/pigeon.pkl"
+
+name = "Great green macaw"

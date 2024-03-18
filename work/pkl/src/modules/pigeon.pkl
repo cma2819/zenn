@@ -1,0 +1,5 @@
+name = "Common wood pigeon"
+diet = "Seeds"
+taxonomy {
+  species = "Columba palumbus"
+}

@@ -1,0 +1,29 @@
+class Taxonomy {
+  kingdom: String
+  clade: String
+  order: String
+}
+
+class Definition {
+  name: String
+  diet: String
+  taxonomy: Taxonomy
+}
+
+bird: Definition = new {
+  name = "Pigeon"
+  diet = "Seeds"
+  taxonomy {
+    kingdom = "Animalia"
+    clade = "Dinosauria"
+    order = "Columbiformes"
+  }
+}
+
+parrot = (bird) {
+  name = "Parrot"
+  diet = "Berries"
+  taxonomy {
+    order = "Psittaciformes"
+  }
+}
